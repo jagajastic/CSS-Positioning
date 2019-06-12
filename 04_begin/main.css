@@ -1,0 +1,61 @@
+/* 
+Static positioning is like the style default behavio of any element
+so applying it to a div or container is not that visible.
+*/
+
+
+/* 
+Inherit posiitoning, div and container, the child element(div)
+inherit what ever the parent(container) element has 
+*/
+
+/* 
+Note: ELement have position before the z-index will work
+Z-index helps you to control the vertical stacking order of element over them self.
+The element with the higher value stays on top of the element with the smaller value
+*/
+
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+.bluebox {
+    background: #627da0;
+    position: relative;
+    top: 10px;
+    z-index: 3;
+}
+
+.greenbox {
+    background: #5b8054;
+    position: relative;
+    z-index: 2;
+}
+
+/** 
+If you are applying position relative to a container that house a div,
+always set the div (child element) position to absolute for it to move with the container.
+*/
+.container {
+    background: rgba(0,0,0,.4);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
