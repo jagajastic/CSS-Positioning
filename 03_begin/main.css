@@ -1,0 +1,45 @@
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/** 
+NOTE: Relative position ignore the position of the element
+below it and to float ontop of it
+*/
+.bluebox {
+    background: #627da0;
+    position: absolute;
+    top: 50px;
+}
+
+.greenbox {
+    background: #5b8054;
+}
+
+/** 
+If you are applying position relative to a container that house a div,
+always set the div (child element) position to absolute for it to move with the container.
+*/
+.container {
+    background: rgba(0,0,0,.4);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+}
