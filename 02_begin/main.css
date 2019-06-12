@@ -1,0 +1,43 @@
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.bluebox {
+    background: #627da0;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.greenbox {
+    background: #5b8054;
+}
+/** 
+Note: To keep a div inside a container with positioning,
+always apply position absolute on both the div and it container.
+this makes the div move position relative tot he container it belong
+*/
+.container {
+    background: rgba(0,0,0,.4);
+    height: 200px;
+    width: 200px; 
+    margin-top: 50px; 
+    position: absolute;
+    top: 100px;
+}
