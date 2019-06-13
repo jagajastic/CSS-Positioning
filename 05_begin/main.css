@@ -1,0 +1,31 @@
+/* 
+float remove the element being float from the document flow.
+it move it to the direction of the float, left or right
+
+*/
+
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* floating the blue box */
+.bluebox {
+    background: #627da0;
+    float: left;
+}
