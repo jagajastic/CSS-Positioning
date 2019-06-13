@@ -1,0 +1,48 @@
+/* 
+Center element: using marrgin 0 auto center element to the  center of the page, zero means top bottom, 
+why auto meaans 50% of both left and right of the page
+Using Positioning absolute
+*/
+
+body {
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+    height: 2000px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #e07a05;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+/* center element horizontally using margin set to 0, and auto */
+/* .bluebox {
+    background: #627da0;
+    margin: 20% auto;
+} */
+
+/* center element vertically using margin set to 0, and auto */
+.bluebox {
+    background: #627da0;
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 100%; /*this takes the full width of his containers*/
+}
+
+
+h1 {
+    display: none;
+}
